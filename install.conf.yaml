@@ -1,0 +1,24 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.tmux.conf: tmux.conf
+    ~/.vim: 
+      force: true
+      path: vim
+    ~/.vimrc: 
+      force: true
+      path: vimrc
+
+- create:
+    - ~/downloads
+    - ~/.vim/undo-history
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - git update-submodules
+  - git cleanall -f vim/pack/vendor/start/
