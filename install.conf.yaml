@@ -19,6 +19,5 @@
     - ~/.vim/undo-history
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - git update-submodules
-  - git cleanall -f vim/pack/vendor/start/
+  - git submodule sync --recursive
+  - git submodule update --init --recursive 
