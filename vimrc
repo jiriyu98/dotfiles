@@ -68,4 +68,4 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " for c++
-nnoremap <C-a> <ESC>:w<CR>:!g++ -std=c++14 % -o a.out && ./a.out<CR>
+nnoremap <C-a> <ESC>:w<CR>:!g++ -std=c++17 -O2 % -o a.out && ./a.out<CR>
