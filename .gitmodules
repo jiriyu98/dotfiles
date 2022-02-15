@@ -14,3 +14,6 @@
 [submodule "vim/pack/vendor/start/vim-cpp-enhanced-highlight"]
 	path = vim/pack/vendor/start/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "vim/pack/vendor/start/nerdtree"]
+	path = vim/pack/vendor/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git

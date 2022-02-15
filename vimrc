@@ -51,6 +51,23 @@ set mouse+=a
 " bind CtrlP support to <c-p>
 let g:ctrlp_map = '<c-p>'
 
+" ======================
+" NERDTree extension
+" ======================
+" start NERDTree and put the cursor back in the other window
+autocmd VimEnter * NERDTree | wincmd p
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+nnoremap <leader>o :NERDTreeFocus<CR>
+nnoremap <leader>n :NERDTree<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-H> <C-W>h
+nnoremap <C-L> <C-W>l
+
+
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
 " for movement, rather than using more efficient movement commands, is also a
@@ -67,5 +84,9 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
+" for color scheme
+colorscheme neodark 
+
 " for c++
 nnoremap <C-a> <ESC>:w<CR>:!g++ -std=c++17 -O2 % -o a.out && ./a.out<CR>
+nnoremap <C-d> <ESC>:%w !pbcopy<CR><CR>
