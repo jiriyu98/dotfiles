@@ -87,6 +87,16 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 " for color scheme
 colorscheme neodark 
 
+nnoremap <C-a> <ESC>:w<CR>:call CompileRun()<CR>
+func! CompileRun()
+	if &filetype == 'cpp'
+		:!g++ -std=c++17 -O2 % -o a.out && ./a.out
+	elseif &filetype == 'c'
+		:!g++ -std=c++17 -O2 % -o a.out && ./a.out
+	elseif &filetype == 'python'
+		:!python3 %
+	endif
+endfunc
 " for c++
-nnoremap <C-a> <ESC>:w<CR>:!g++ -std=c++17 -O2 % -o a.out && ./a.out<CR>
+" nnoremap <C-a> <ESC>:w<CR>:!g++ -std=c++17 -O2 % -o a.out && ./a.out<CR>
 nnoremap <C-d> <ESC>:%w !pbcopy<CR><CR>

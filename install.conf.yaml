@@ -13,6 +13,12 @@
     ~/.vimrc: 
       force: true
       path: vimrc
+    ~/.bash_profile:
+      force: true
+      path: bash_profile
+    ~/.gitconfig:
+      force: true
+      path: gitconfig
 
 - create:
     - ~/downloads
