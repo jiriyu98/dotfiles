@@ -19,6 +19,9 @@
     ~/.gitconfig:
       force: true
       path: gitconfig
+    ~/.zshrc:
+      force: true
+      path: zshrc
 
 - create:
     - ~/downloads

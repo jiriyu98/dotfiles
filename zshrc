@@ -1,0 +1,4 @@
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.bash_profile
+PROMPT='%(?.%F{31}jiri.%F{red}?%?)%f@%B%F{69}%1~%f%b %# '
+
