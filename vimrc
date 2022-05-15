@@ -14,6 +14,8 @@ set shiftwidth=4
 set cul " highlight current line
 set cindent " c languafe indent
 set laststatus=2 " vim-airline status open
+set cursorcolumn " highlight column
+set cursorline " highlight line
 
 
 " The backspace key has slightly unintuitive behavior by default. For example,
@@ -95,6 +97,8 @@ func! CompileRun()
 		:!g++ -std=c++17 -O2 % -o a.out && ./a.out
 	elseif &filetype == 'python'
 		:!python3 %
+	elseif &filetype == 'java'
+		:!java %
 	endif
 endfunc
 " for c++

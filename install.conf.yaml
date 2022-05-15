@@ -22,6 +22,9 @@
     ~/.zshrc:
       force: true
       path: zshrc
+    ~/.zshrc.pre-oh-my-zsh:
+      force: true
+      path: pre_zshrc
 
 - create:
     - ~/downloads
