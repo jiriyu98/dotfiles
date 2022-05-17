@@ -17,8 +17,8 @@ export PATH=$PATH:/Applications/IntelliJ\ IDEA.app/Contents/plugins/maven/lib/ma
 export PATH=~/bin:$PATH
 alias java-algs4="java -cp /Users/alwaysyu/Desktop/code/Princeton-Algorithm/algs4.jar:"
 export python="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6"
-#export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ "
-export PS1="\[\033[36m\]\u\[\033[m\]:\[\033[33;1m\]\W\[\033[m\]\$ "
+# export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\W\[\033[m\]\$ "
+# export PS1="\[\033[36m\]\u\[\033[m\]:\[\033[33;1m\]\W\[\033[m\]\$ "
 # enable color support of ls and also add handy aliases
 alias ls='ls -G'
 alias python='python3'
