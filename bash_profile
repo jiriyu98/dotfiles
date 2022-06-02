@@ -22,4 +22,3 @@ export python="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6"
 # enable color support of ls and also add handy aliases
 alias ls='ls -G'
 alias python='python3'
-export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
