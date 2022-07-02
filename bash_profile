@@ -22,3 +22,5 @@ export python="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6"
 # enable color support of ls and also add handy aliases
 alias ls='ls -G'
 alias python='python3'
+export CLEAN_HOME=/Users/alwaysyu/Desktop/Materias/Master/UTokyo/M1\ Courses/FPL/clean-bundle-complete
+export PATH=$PATH:$CLEAN_HOME/bin

@@ -99,6 +99,10 @@ func! CompileRun()
 		:!python3 %
 	elseif &filetype == 'java'
 		:!java %
+	elseif &filetype == 'clean'
+		:!clm '%:r' -o a.out && ./a.out
+	else
+		:!echo "wrong"
 	endif
 endfunc
 " for c++

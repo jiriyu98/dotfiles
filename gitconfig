@@ -2,5 +2,5 @@
 	lg = log --color  --graph --decorate --pretty=oneline --abbrev-commit --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 
 [user]
-	name = jiri
+	name = jiriyu
 	email = jiriyu98@gmail.com
