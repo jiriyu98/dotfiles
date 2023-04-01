@@ -74,7 +74,6 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 plugins+=(zsh-vi-mode)
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -98,7 +97,16 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias rm="echo 'do not use rm'"
+alias python3="/usr/bin/python3"
+alias python="python3"
+alias pip3="/usr/bin/pip3"
+alias pip="pip3"
+alias ipython="python -m IPython"
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit ; compinit

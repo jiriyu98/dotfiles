@@ -25,6 +25,9 @@
     ~/.zshrc.pre-oh-my-zsh:
       force: true
       path: pre_zshrc
+    ~/.emacs.d/init.el:
+      force: true 
+      path: emacs-init.el
 
 - create:
     - ~/downloads

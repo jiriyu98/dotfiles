@@ -20,3 +20,6 @@
 [submodule "vim/pack/vendor/start/markdown-preview.vim"]
 	path = vim/pack/vendor/start/markdown-preview.vim
 	url = https://github.com/iamcco/markdown-preview.vim
+[submodule "vim/pack/vendor/start/vim-plug"]
+	path = vim/pack/vendor/start/vim-plug
+	url = https://github.com/junegunn/vim-plug
